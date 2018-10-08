@@ -1,173 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Главные новости - Газета.Ru</title>
-  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Кваст</title>
+  <base href="#">
 </head>
 
 <body>
-  <header class="header">
-    <div class="menu"><img src="img/burger.png" alt="menu" height="39" width="39"></div>
-    <div class="header__logo"><img src="img/logo.svg" alt="Site logo" height="26" width="118" /></div>
-    <nav class="header__nav">
-      <ul class="nav-list">
-        <li class="nav-list__item">Новости Дня</li>
-        <li class="nav-list__item">Политика</li>
-        <li class="nav-list__item">Бизнес</li>
-        <li class="nav-list__item">Общество</li>
-        <li class="nav-list__item">Армия</li>
-        <li class="nav-list__item">Мнения</li>
-        <li class="nav-list__item">Культура</li>
-        <li class="nav-list__item">Наука</li>
-        <li class="nav-list__item">Технологии</li>
-        <li class="nav-list__item">Авто</li>
-        <li class="nav-list__item">Стиль Жизни</li>
-        <li class="nav-list__item">Спорт</li>
-        <li class="nav-list__item">Фото</li>
-        <li class="nav-list__item">Видео</li>
-        <li class="nav-list__item">Полная версия</li>
-      </ul>
-      <div class="search">
-        <img src="img/search.png" alt="search" height="39" width="39">
-        <input type="search" />
+  <div class="page-header">
+    <div class="header-top">
+      <div class="header-logo">
+        <img src="img/logo.png" alt="Кваст">
       </div>
-    </nav>
-  </header>
-  <main class="main">
-    <section class="major">
-      <button class="major-button">ГЛАВНОЕ</button>
-      <button class="news-button">НОВОСТИ</button>
-      <ul class="major-list">
-        <li class="major-list__item">
-          <div class="promo-item">
-            <h2 class="promo-item__header">Бэнкси отреагировал на уничтожение своей картины на аукционе</h2>
-          </div>
-        </li>
-        <li class="major-list__item">
-          <div class="promo-item">
-            <h2 class="promo-item__header">Власти Китая подозревают главу Интерпола в коррупции</h2>
-          </div>
-        </li>
-        <li class="major-list__item">
-          <div class="promo-item">
-            <h2 class="promo-item__header">СК опроверг версию о застреленном пилоте вертолета с замом Чайки</h2>
-          </div>
-        </li>
-        <li class="major-list__item">
-          <div class="promo-item">
-            <h2 class="promo-item__header">Google Chrome перестанет работать на 32 млн устройств</h2>
-          </div>
-        </li>
-        <li class="major-list__item">
-          <div class="promo-item">
-            <h2 class="promo-item__header">Первая леди США рассказала, как относится к твитам Трампа</h2>
-          </div>
-        </li>
+      <ul class="main-nav">
+        <li><a href="#">История</a></li>
+        <li><a href="#">Производство</a></li>
+        <li><a href="#">Ассортимент</a></li>
+        <li><a href="#">Где купить</a></li>
       </ul>
-    </section>
-    <section class="news">
-      <ul class="news-list">
-        <li class="news-list__item">
-          <div class="news-item">
-            <h2 class="news-item__header">Аллегри прокомментировал выдающийся старт «Ювентуса» в Серии А</h2>
-          </div>
-        </li>
-        <li class="news-list__item">
-          <div class="news-item">
-            <h2 class="news-item__header">Кавано утвержден в должности верховного судьи США</h2>
-          </div>
-        </li>
-        <li class="news-list__item">
-          <div class="news-item">
-            <h2 class="news-item__header">Власти Китая подозревают главу Интерпола в коррупции</h2>
-          </div>
-        </li>
-        <li class="news-list__item">
-          <div class="news-item">
-            <h2 class="news-item__header">В Саратове скончался второй за месяц полицейский конь</h2>
-          </div>
-        </li>
-        <li class="news-list__item">
-          <div class="news-item">
-            <h2 class="news-item__header">Трамп назвал обвиняемого в домогательствах Кавано «очень хорошим человеком»</h2>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <article class="blog">
-      <ul class="blog-list">
-        <li class="blog-list__item">
-          <div class="blog-head">
-            <span class="blog-head__subject">Армия</span>
-            <span class="blog-head__time">21:42</span>
-          </div>
-          <div class="blog-bottom">
-            <img src="img/blogimage.jpg" alt="blog image" class="blog-bottom__image" height="261" width="394">
-            <h2 class="blog-bottom__header">Опасные маневры: «КНР покажет США, что они не всемогущи»</h2>
-            <a href="#">
-              <p>В начале октября эсминец ВМС Китая проследовал на «небезопасном» расстоянии в 41 м от корабля ВМС США, выполнявшего миссию по обеспечению свободы навигации близ спорных...</p>
-            </a>
-          </div>
-        </li>
-        <li class="blog-list__item">
-          <div class="blog-head">
-            <span class="blog-head__subject">Спорт</span>
-            <span class="blog-head__time">21:28</span>
-          </div>
-          <div class="blog-bottom">
-            <img src="img/blogimage2.jpg" alt="blog image" class="blog-bottom__image" height="261" width="394">
-            <h2 class="blog-bottom__header">Бой века: сумасшедшие деньги и ненависть в Лас-Вегасе</h2>
-            <a href="#">
-              <p>6 октября в Лас-Вегасе (рано утром 7 октября по московскому времени) состоится главный поединок в истории смешанных единоборств. За титул чемпиона мира UFC в легком весе...</p>
-            </a>
-          </div>
-        </li>
-        <li class="blog-list__item">
-          <div class="blog-head">
-            <span class="blog-head__subject">Технологии</span>
-            <span class="blog-head__time">15:58</span>
-          </div>
-          <div class="blog-bottom">
-            <img src="img/blogimage3.jpg" alt="blog image" class="blog-bottom__image" height="261" width="394">
-            <h2 class="blog-bottom__header">«Я не готов к ссоре с Россией»: Юнкер спокоен, как никогда</h2>
-            <a href="#">
-              <p>Евросоюз не должен ругаться с Россией из-за скандала вокруг кибератаки на Организацию по запрещению химического оружия, в которой Голландия обвинила российскую сторону...</p>
-            </a>
-          </div>
-        </li>
-        <li class="blog-list__item">
-          <div class="blog-head">
-            <span class="blog-head__subject">Бизнес</span>
-            <span class="blog-head__time">15:14</span>
-          </div>
-          <div class="blog-bottom">
-            <img src="img/blogimage4.jpg" alt="blog image" class="blog-bottom__image" height="261" width="394">
-            <h2 class="blog-bottom__header">Оставят без сладкого: россияне съедят весь шоколад в мире</h2>
-            <a href="#">
-              <p>Россияне обрушат мировой рынок производства какао. И все из-за пристрастия граждан России к шоколаду, утверждает Bloomberg. А в основе «повышенной любви» к этому продукту...</p>
-            </a>
-          </div>
-        </li>
-        <li class="blog-list__item">
-          <div class="blog-head">
-            <span class="blog-head__subject">Автомобили</span>
-            <span class="blog-head__time">14:58</span>
-          </div>
-          <div class="blog-bottom">
-            <img src="img/blogimage5.jpg" alt="blog image" class="blog-bottom__image" height="261" width="394">
-            <h2 class="blog-bottom__header">Страшное ДТП под Тверью: за директором уже пришли</h2>
-            <a href="#">
-              <p>По делу о ДТП под Тверью, где погибли 13 человек, задержан директор компании-перевозчика «ТрансАвто», которой принадлежит микроавтобус Ford Transit, выехавший...</p>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </article>
-  </main>
+    </div>
+    <div class="promo">
+      <p>Крафтовый квас <br> всему голова!</p>
+    </div>
+  </div>
+
+  <div class="new">
+    <h2>Новинки</h2>
+    <div class="item-one">
+      <h3>Вахтёр</h3>
+      <table>
+        <tr>
+          <td>
+            Алк.
+          </td>
+          <td>
+            < 1% </td>
+        </tr>
+        <tr>
+          <td>
+            Ккал:
+          </td>
+          <td>
+            35
+          </td>
+        </tr>
+      </table>
+      <p>Ржаной хлеб, Вода, Солод, Соль</p>
+      <img src="img/bottle-left.jpg" />
+      <p>
+        Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!
+      </p>
+      <a href="#">Подробнее</a>
+      <a href="#">Купить</a>
+      <b>150 Р.</b>
+    </div>
+    <div class="item-two">
+      <h3>Романтик</h3>
+      <table>
+        <tr>
+          <td>
+            Алк.
+          </td>
+          <td>
+            < 0,5% </td>
+        </tr>
+        <tr>
+          <td>
+            Ккал:
+          </td>
+          <td>
+            27
+          </td>
+        </tr>
+      </table>
+      <p>
+        Ячменный хлеб, Вода, Солод, Апельсин
+      </p>
+      <img src="img/bottle-right.jpg" />
+      <p>
+        Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.
+      </p>
+      <a href="#">Подробнее</a>
+      <a href="#">Купить</a>
+      <b>90 Р.</b>
+
+    </div>
+  </div>
+
+  <div class="advantages">
+    <ul>
+      <li class="advantages-item">
+        <h2>Варим сами</h2>
+        <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
+      </li>
+      <li class="advantages-item">
+        <h2>Своё, родное</h2>
+        <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
+      </li>
+      <li class="advantages-item">
+        <h2>Не экономим</h2>
+        <p>Человек это то, что он ест и пьет. У нас только качественные ингредиенты.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="history">
+    <h2>Немного истории</h2>
+    <div class="history-origin">
+
+      <dl>
+        <dt>
+          <h3>Происхождение кваса</h3>
+          <i>Источник: </i><a href="https://ru.wikipedia.org">ru.wikipedia.org</a>
+        </dt>
+        <dd>
+          <img src="img/wiki-1.png" alt="Происхождение кваса" />
+          <p>
+            Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет древнерусское происхождение. Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, но называется он везде одинаково — квас.
+          </p>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="history-classification">
+      <dl>
+        <dt>
+          <h3>Классификация кваса</h3>
+          <i>Источник: </i><a href="https://ru.wikipedia.org">ru.wikipedia.org</a>
+        </dt>
+        <dd>
+          <img src="img/wiki-2.png" alt="Классификация кваса" />
+          <p>
+            По российскому ГОСТу для промышленного изготовления — это напиток с объёмной долей этилового спирта не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого брожения сусла.
+          </p>
+        </dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="press">
+    <h2>Пресса о нас</h2>
+    <blockquote>
+      <p>
+        Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!
+      </p>
+      <i>Газета столичный Стольник </i>
+      <a href="#">Читать далее</a>
+    </blockquote>
+  </div>
+
+  <div class="assortment">
+    <h2>Ассортимент</h2>
+    <table>
+      <tr>
+        <th>Название</th>
+        <th>Алк.</th>
+        <th>Ккал</th>
+        <th>Объём</th>
+        <th>Стоимость</th>
+      </tr>
+      <tr>
+        <td>Классика</td>
+        <td>< 1,2%</td>
+        <td>33</td>
+        <td>330 мл</td>
+        <td>120 Р.</td>
+      </tr>
+      <tr>
+        <td>Шабаш</td>
+        <td>> 1,2%</td>
+        <td>45</td>
+        <td>330 мл</td>
+        <td>250 Р.</td>
+      </tr>
+      <tr>
+        <td>Вахтёр <sup>Новинка</sup></td>
+        <td>< 1%</td>
+        <td>35</td>
+        <td>0,5 л</td>
+        <td>150 Р.</td>
+      </tr>
+      <tr>
+        <td>Романтик <sup>Новинка</sup></td>
+        <td>< 0,5%</td>
+        <td>27</td>
+        <td>0,5 л</td>
+        <td>90 Р.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="order">
+    <h2>Заказать</h2>
+    <p>
+      Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.
+    </p>
+    <label for="name">Представьтесь: </label>
+    <input type="text" name="name" id="name"/><br />
+    <label for="phone">Номер телефона: </label>
+    <input type="text" name="phone" id="phone" /><br />
+    <label for="second-phone">Доп. номер: </label>
+    <input type="text" name="second-phone" id="second-phone" /><br />
+    <label for="email">Email: </label>
+    <input type="text" name="email" id="email" /><br />
+    <label for="size">Объем заказа: </label>
+    <select name="size" id="size">
+      <option value="1">
+          От 5 до 10 баррелей в неделю
+      </option>
+      <option value="2">
+
+      </option>
+    </select><br />
+    <label for="commentary">Доп. комментарий: </label>
+    <textarea rows="10" cols="96"  name="commentary" id="commentary"></textarea><br />
+    <label>
+      <input type="checkbox" name="subscription" />
+      Я согласен получать квасную рассылку
+    </label><br />
+    <input type="submit" value="Отправить заказ" />
+    </div>
+
+  <div class="footer">
+    <img src="img/logo.png" alt="Кваст">
+  <ul class="main-nav">
+    <li><a href="#">История</a></li>
+    <li><a href="#">Производство</a></li>
+    <li><a href="#">Ассортимент</a></li>
+    <li><a href="#">Где купить</a></li>
+  </ul>
+
+  <a href="#">Инстаграм</a>
+  <a href="#">Фейсбук</a>
+  <a href="#">Вконтакте</a>
+
+  <br />
+
+  <p>
+    При перепечатке материалов ссылка на сайт обязательна!
+  </p>
+
+  <img src="img/htmlacademy.png"  alt="htmlacademy"/>
+  <b>Разработчик:</b> <a href="https://htmlacademy.ru/"> HTML Academy</a>
+
+  </div>
+
+  </div>
+
 </body>
+
+</html>
