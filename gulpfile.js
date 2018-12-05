@@ -7,10 +7,10 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var htmlmin = require('gulp-htmlmin');
-var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
+var php = require("gulp-connect-php");
 var webp = require("gulp-webp");
 var run = require("run-sequence");
 var svgstore = require("gulp-svgstore");
@@ -41,9 +41,9 @@ autoprefixer()
 .pipe(server.stream());
 });
 
+
 gulp.task("compress", function () {
 return gulp.src("source/js/*.js")
-.pipe(uglify())
 .pipe(gulp.dest("build/js"));
 });
 
@@ -54,14 +54,21 @@ return gulp.src("source/*.html")
 });
 
 gulp.task("serve", ["style"], function() {
-server.init({
-server: "source/",
-notify: false,
-open: true,
-cors: true,
-ui: false
+    php.server({
+    base:"./source/",
+    port:8010
+    },function(){
+        server.init({
+        proxy:'127.0.0.1:8010',
+        //server: "source/",
+        notify: false,
+        open: true,
+        cors: true,
+        ui: false
+        });
 });
 
+gulp.watch('source/php/*.php').on('change', server.reload);
 gulp.watch("source/less/**/*.less", ["style"]);
 gulp.watch("source/*.html").on("change", server.reload);
 });
